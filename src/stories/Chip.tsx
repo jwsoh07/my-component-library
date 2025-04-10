@@ -1,4 +1,3 @@
-import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { COLORS } from "../constants";
 import { CloseIcon } from "../components/CloseIcon";
@@ -44,10 +43,6 @@ export const Chip = ({
   ...props
 }: ChipProps) => {
   const styles = SIZES[size];
-
-  // if onDelete function is provided and no deleteIcon is provided,
-  // the delete Icon will be defaulted to the one from the design.
-  // Callback fired when the delete icon is clicked. If set, the delete icon will be shown.
 
   return (
     <Wrapper style={styles} {...props}>
